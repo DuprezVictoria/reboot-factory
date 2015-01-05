@@ -1,0 +1,31 @@
+.ecran {
+	width: 300px;
+	height: 500px;
+	background: white;
+	border: solid;
+
+	margin: 0 auto;
+
+	position: relative;
+	z-index: 50;
+}
+
+.page {
+	width: 300px;
+	height: 500px;
+	background: #BADA55;
+
+	position: relative;
+	z-index: 1;
+
+	
+
+	-webkit-animation: deplacement 400ms linear 1;
+
+}
+
+@-webkit-keyframes deplacement {
+	0% 		{-webkit-transform: translateX(0); }
+	
+	100% 	{-webkit-transform: translateX(-350px); }
+}

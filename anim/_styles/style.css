@@ -1,0 +1,245 @@
+body {
+	margin: 0;
+	padding: none;
+	width: 100%;
+}
+
+section {
+	width: 100%;
+	height: 700px;
+	margin-top: 50px;
+
+}
+
+/*1ere anim*/
+
+
+
+.container {
+	width: 300px;
+	height: 500px;
+	border: solid;
+	background: white;
+
+	margin: 0 auto;
+
+}
+
+.barre {
+	width: 300px;
+	height: 50px;
+	background: #AC1D1C;
+
+}
+
+.bouteille {
+	width: 70px;
+	height: 200px;
+	background: white;
+	border: solid;
+
+	margin: 0 auto;
+	position: relative;
+	top: 120px;
+
+	overflow: hidden;
+
+	z-index: 5000;
+}
+
+.vin {
+	width: 150px;
+	height: 250px;
+	background: #AC1D1C;
+
+	position: relative;
+	right: 25px;
+	top: 300px;
+
+	-webkit-animation: deplacementbout 2000ms linear 1 forwards;
+
+}
+
+@-webkit-keyframes deplacementbout{
+	0% 		{-webkit-transform: translateY(0); }
+	
+	100% 	{-webkit-transform: translateY(-300px); }
+}
+
+
+
+
+/* 2e anim*/
+
+
+.ecran {
+	width: 300px;
+	height: 500px;
+	border: solid;
+	background: #fff;
+
+	margin: 0 auto;
+}
+
+.ensemble {
+	width: 405px;
+	height: 100px;
+	border: solid;
+	background: grey;
+}
+
+.photo {
+	width: 100px;
+	height: 100px;
+	background: blue;
+	float: left;
+}
+
+.nom{
+	margin: 10px;
+	float: left;
+}
+
+.fleche {
+	width: 20px;
+	height: 20px;
+	background: red;
+	float: left;
+	margin: 10px;
+}
+
+.delete {
+	width: 100px;
+	height: 100px;
+	background: red;
+	float: right;
+}
+
+
+.ensemble.open {
+	-webkit-transform: translateX(-100px);
+	-webkit-transition: all .5s;
+}
+
+
+
+/*3e anim*/
+
+.ecran {
+
+	position: relative;
+	z-index: 50;
+}
+
+.page1 {
+	width: 300px;
+	height: 500px;
+	background: #BADA55;
+
+	position: relative;
+	z-index: 1;
+	
+
+	-webkit-animation: deplacement 400ms linear 1;
+
+}
+
+@-webkit-keyframes deplacement {
+	0% 		{-webkit-transform: translateX(700px); }
+	
+	100% 	{-webkit-transform: translateX(0); }
+}
+
+
+
+
+/*4e anim*/
+
+.page2 {
+	width: 300px;
+	height: 500px;
+	background: #BADA55;
+
+	position: relative;
+	z-index: 1;
+
+	
+
+	-webkit-animation: deplacementbis 400ms linear 1;
+
+}
+
+@-webkit-keyframes deplacementbis {
+	0% 		{-webkit-transform: translateX(0); }
+	
+	100% 	{-webkit-transform: translateX(-350px); }
+}
+
+
+/*5e anim*/
+
+.barre {
+	background: red;
+	position: relative;
+	z-index: 30;
+}
+
+.bouton {
+	width: 26px;
+	height: 26px;
+	background: blue;
+	position: relative;
+	z-index: 50;
+	
+	float: right;
+	right: 10px;
+	top: 2px;
+}
+
+.recherche {
+	background: black;
+	
+	-webkit-transform: translateY(-200px);
+}
+
+
+
+.recherche.open {
+
+
+	-webkit-transform: translateY(30px);
+	-webkit-transition: all 1s;
+
+}
+
+.form {
+	background: white;
+	width: 240px;
+	height: 20px;
+
+	position: relative;
+	top: 5px;
+	left: 10px;
+}
+
+.loupe {
+	background: blue;
+	width: 20px;
+	height: 20px;
+
+	display: inline-block;
+	position: relative;
+	bottom: 15px;
+	left: 260px;
+}
+
+.scan, .avance {
+	width: 156px;
+	height: 30px;
+	background: white;
+	border: solid 1px;
+	margin: 0;
+
+	display: inline-block;
+
+}

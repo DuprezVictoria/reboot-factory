@@ -1,0 +1,48 @@
+.ecran {
+	width: 300px;
+	height: 500px;
+	border: solid;
+	background: #fff;
+
+	margin: 0 auto;
+}
+
+.ensemble {
+	width: 405px;
+	height: 100px;
+	border: solid;
+	background: grey;
+}
+
+.photo {
+	width: 100px;
+	height: 100px;
+	background: blue;
+	float: left;
+}
+
+.nom{
+	margin: 10px;
+	float: left;
+}
+
+.fleche {
+	width: 20px;
+	height: 20px;
+	background: red;
+	float: left;
+	margin: 10px;
+}
+
+.delete {
+	width: 100px;
+	height: 100px;
+	background: red;
+	float: right;
+}
+
+
+.ensemble.open {
+	-webkit-transform: translateX(-100px);
+	-webkit-transition: all .5s;
+}

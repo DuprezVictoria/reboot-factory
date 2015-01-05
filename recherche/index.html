@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>anim barre de recherche</title>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="_styles/style.css" />
+	</head>
+	<body>
+
+		<p>cliques sur le bouton recherche pour acceder aux différents choix</p>
+		<div class="ecran">
+			<div class="barre">
+				<button class="bouton"></button>
+				<div class="recherche">
+					<div>
+					<div class="form"></div>
+					<div class="loupe"></div>
+					</div>
+				
+				<div class="scan"></div>
+				<div class="avance"></div>
+				</div>
+			</div>
+		</div>
+
+
+		<script>
+
+			var bouton = document.getElementsByClassName("bouton"),
+				recherche = document.getElementsByClassName("recherche");
+
+			bouton[0].addEventListener("click", function(){
+				recherche[0].classList.add("open");
+			});
+
+		</script>
+
+
+	</body>
+</html>

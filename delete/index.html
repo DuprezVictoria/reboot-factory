@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>UN TITRE</title>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="_styles/style.css" />
+	</head>
+	<body>
+
+		<p>Slide vers la gauche pour supprimer ce vin.</p>
+
+		<div class="ecran">
+
+		<div class="ensemble">
+
+			<img src="cote-du-rhone.jpg" class="photo">
+			<p class="nom">Cote du rhone</p>
+			<button class="fleche"></button>
+			<div class="delete"><p>delete</p></div>
+
+		</div>
+		</div>
+
+		<script>
+
+		var fleche = document.getElementsByClassName("fleche"),
+			barre = document.getElementsByClassName("ensemble");
+
+		fleche[0].addEventListener("click", function(){
+			barre[0].classList.add("open");
+		});
+
+
+
+		</script>
+
+
+	</body>
+</html>

@@ -1,0 +1,56 @@
+body {
+	margin: 0;
+	padding: none;
+	width: 100%;
+}
+
+.container {
+	width: 300px;
+	height: 500px;
+	border: solid;
+	background: white;
+
+	margin: 0 auto;
+
+}
+
+.barre {
+	width: 300px;
+	height: 50px;
+	background: #AC1D1C;
+
+}
+
+.bouteille {
+	width: 70px;
+	height: 200px;
+	background: white;
+	border: solid;
+
+	margin: 0 auto;
+	position: relative;
+	top: 120px;
+
+	overflow: hidden;
+
+	z-index: 5000;
+}
+
+.vin {
+	width: 150px;
+	height: 250px;
+	background: #AC1D1C;
+
+	position: relative;
+	right: 25px;
+	top: 300px;
+
+	-webkit-animation: deplacement 2000ms linear 1 forwards;
+
+}
+
+@-webkit-keyframes deplacement{
+	0% 		{-webkit-transform: translateY(0); }
+	
+	100% 	{-webkit-transform: translateY(-300px); }
+}
